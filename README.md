@@ -4,6 +4,7 @@
 This project processes JSON data containing information about the top-starred repositories on GitHub for various search terms. The goal is to extract relevant insights and store them in a PostgreSQL database using Apache Spark.
 
 ### Resources
+- **Deployment:** The project was containerized using Docker to ensure portability and ease of setup.
 - **Input:** An archive file containing 30 JSON files.
 - **Source Data:** Available on Kaggle - [Top 1000 GitHub Repositories for Multiple Domains](https://www.kaggle.com/datasets/anshulmehtakaggl/top-1000-github-repositories-for-multiple-domains?select=React-JS.json)
 - **Tools Used:**
@@ -41,15 +42,4 @@ The project involves extracting three main pieces of information from the JSON f
 ### Key Deliverables
 - Apache Spark code for processing JSON files and saving output to PostgreSQL.
 - A PostgreSQL database containing the extracted and structured data.
-
-### How to Run
-1. **Set Up PostgreSQL**: Ensure you have PostgreSQL installed and running.
-2. **Load Data with Apache Spark**:
-   - Read JSON files using Apache Spark.
-   - Process and extract relevant data.
-   - Store results in PostgreSQL tables.
-3. **Query Data**: Use SQL queries to analyze the stored data.
-
-### Conclusion
-This project efficiently processes GitHub repository data using Apache Spark, extracting key insights and storing them in a PostgreSQL database for further analysis.
 
